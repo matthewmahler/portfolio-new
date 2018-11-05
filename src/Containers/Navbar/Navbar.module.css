@@ -1,0 +1,32 @@
+.navContainer {
+  height: 15vh;
+  width: 100%;
+  border-bottom: 10px solid #154A6D;
+  box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.25);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.fullName {
+  font-weight: 900;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  color: #4C4C4C;
+  top: 50%
+}
+
+.accents {
+  color: #39B1FF;
+}
+
+
+
+.navLink {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #4C4C4C;
+  top: 50%
+}
