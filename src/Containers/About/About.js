@@ -25,10 +25,7 @@ class About extends Component {
               varius augue vestibulum nisl dignissim fringilla. Duis vestibulum
               purus sapien, nec ultricies enim maximus ac. Sed tincidunt tortor
               non dui imperdiet dignissim. Vestibulum vel mattis lectus. Integer
-              dignissim ante libero, nec porttitor ex auctor sit amet. In hac
-              habitasse platea dictumst. Integer pharetra nulla et neque
-              ultricies aliquam. Nulla facilisi. Cras aliquam erat et sem
-              dignissim rhoncus. Sed quis mattis elit.
+              dignissim ante libero, nec porttitor ex auctor sit amet.
             </p>
             <p className={classes.about}>
               Nulla egestas venenatis tincidunt. Suspendisse ullamcorper augue
@@ -36,10 +33,7 @@ class About extends Component {
               a nulla a commodo. Donec consequat in ligula sed blandit. Etiam eu
               malesuada tellus, eget malesuada orci. Morbi consectetur libero
               justo, vel pellentesque velit ultricies quis. Integer in fringilla
-              arcu. Aenean venenatis finibus quam, eu ullamcorper libero.
-              Vivamus aliquam justo felis, suscipit convallis urna dapibus eget.
-              Vestibulum et fringilla diam. Aliquam erat volutpat. Nulla ut
-              sapien nibh.
+              arcu. sapien nibh.
             </p>
           </Col>
         </Row>

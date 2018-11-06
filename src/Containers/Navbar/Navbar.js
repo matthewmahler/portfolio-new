@@ -19,7 +19,7 @@ class Navbar extends Component {
             </h1>
           </Col>
           <Col sm="12" md={{ size: 6 }} className="py-3">
-            <Nav className="float-right">
+            <Nav className={classes.navFull}>
               <NavItem>
                 <NavLink tag={Link} to="/" className={classes.navLink}>
                   About
@@ -31,7 +31,7 @@ class Navbar extends Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/Contacts" className={classes.navLink}>
+                <NavLink tag={Link} to="/Contact" className={classes.navLink}>
                   Contact
                 </NavLink>
               </NavItem>

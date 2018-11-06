@@ -2,14 +2,16 @@
   height: 85vh;
   z-index: -1;
   box-sizing: border-box;
-  -webkit-box-shadow: inset 0 0 60px 20px #154A6D;
-  box-shadow: inset 0 0 60px 20px #154A6D;
+  -webkit-box-shadow: inset 0 0 60px 30px #154A6D;
+  box-shadow: inset 0 0 60px 30px #154A6D;
 }
 
 .leftSection {
-  margin-top: 50px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
 
 .bigTagline {
   font-style: normal;
@@ -32,7 +34,10 @@
 
 
 .rightSection {
-  margin-top: 50px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about {

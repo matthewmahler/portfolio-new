@@ -1,0 +1,14 @@
+.leftSection {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.rightSection {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
