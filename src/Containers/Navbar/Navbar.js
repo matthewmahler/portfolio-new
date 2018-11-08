@@ -8,7 +8,7 @@ class Navbar extends Component {
     let leftBrace = "{ ";
     let rightBrace = " }";
     return (
-      <Container fluid="true" className={classes.navContainer}>
+      <Container fluid={true} className={classes.navContainer}>
         <Row>
           <Col sm="12" md={{ size: 6 }} className="py-3">
             <h1 className={classes.fullName}>

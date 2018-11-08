@@ -5,7 +5,7 @@ import { Container, Row, Col } from "reactstrap";
 class About extends Component {
   render() {
     return (
-      <Container fluid="true" className={classes.aboutSection}>
+      <Container fluid={true} className={classes.aboutSection}>
         <Row>
           <Col
             sm="12"

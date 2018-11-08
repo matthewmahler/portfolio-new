@@ -3,10 +3,11 @@ body {
   background: #F7F7F7;
 }
 
-a:hover {
-  color: #39B1FF;
-}
 
-a:active {
-  color: #39B1FF;
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
 }
