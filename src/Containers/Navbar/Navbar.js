@@ -11,17 +11,19 @@ class Navbar extends Component {
       <Container fluid={true} className={classes.navContainer}>
         <Row>
           <Col sm="12" md={{ size: 6 }} className="py-3">
-            <h1 className={classes.fullName}>
-              Matthew <span className={classes.accents}>{leftBrace}</span>
-              James
-              <span className={classes.accents}>{rightBrace} </span>
-              Mahler
-            </h1>
+            <NavLink tag={Link} to="/">
+              <h1 className={classes.fullName}>
+                Matthew <span className={classes.accents}>{leftBrace}</span>
+                James
+                <span className={classes.accents}>{rightBrace} </span>
+                Mahler
+              </h1>
+            </NavLink>
           </Col>
           <Col sm="12" md={{ size: 6 }} className="py-3">
             <Nav className={classes.navFull}>
               <NavItem>
-                <NavLink tag={Link} to="/" className={classes.navLink}>
+                <NavLink tag={Link} to="/About" className={classes.navLink}>
                   About
                 </NavLink>
               </NavItem>

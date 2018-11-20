@@ -5,8 +5,9 @@ import Portfolio from "./Containers/Portfolio/Portfolio";
 import Contact from "./Containers/Contact/Contact";
 import Resume from "./Containers/Resume/Resume";
 import Music from "./Containers/Music/Music";
-
+import Landing from "./Containers/Landing/Landing";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 class App extends Component {
   render() {
     return (
@@ -15,7 +16,8 @@ class App extends Component {
           <div>
             <Navbar />
             <Switch>
-              <Route exact path="/" render={() => <About />} />
+              <Route exact path="/" render={() => <Landing />} />
+              <Route exact path="/About" render={() => <About />} />
               <Route exact path="/Portfolio" render={() => <Portfolio />} />
               <Route exact path="/Contact" render={() => <Contact />} />
               <Route exact path="/Resume" render={() => <Resume />} />

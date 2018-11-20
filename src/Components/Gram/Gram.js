@@ -6,7 +6,6 @@ import classes from "./Gram.module.css";
 class Gram extends Component {
   render() {
     const paths = [
-      require("../../assets/44874029_10213407095995180_6113696503438508032_o.jpg"),
       require("../../assets/40403719_10213026852449329_5886796151444733952_n.jpg"),
       require("../../assets/39920006_10212983652289352_4095213027102556160_o.jpg"),
       require("../../assets/35882953_10212573611718594_5248738107758477312_n.jpg"),

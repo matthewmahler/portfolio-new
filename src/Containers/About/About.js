@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import classes from "./About.module.css";
 import { Container, Row, Col } from "reactstrap";
+import Gram from "../../Components/Gram/Gram";
 
 class About extends Component {
   render() {
@@ -10,16 +11,8 @@ class About extends Component {
           <Col
             sm="12"
             md={{ size: 5, offset: 1 }}
-            className={classes.leftSection}
+            className={classes.mainSection}
           >
-            <h1 className={classes.bigTagline}>I am a</h1>
-            <span className={classes.tagline}>Music Producer,</span>
-            <span className={classes.tagline}>Audio Engineer,</span>
-            <span className={classes.tagline}>Multi-Instrumentalist</span>
-            <span className={classes.tagline}>turned</span>
-            <span className={classes.tagline}>Full Stack Web Developer</span>
-          </Col>
-          <Col sm="12" md={{ size: 5 }} className={classes.rightSection}>
             <p className={classes.about}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               varius augue vestibulum nisl dignissim fringilla. Duis vestibulum
@@ -35,6 +28,13 @@ class About extends Component {
               justo, vel pellentesque velit ultricies quis. Integer in fringilla
               arcu. sapien nibh.
             </p>
+          </Col>
+          <Col
+            sm="12"
+            md={{ size: 4, offset: 1 }}
+            className={classes.photoSection}
+          >
+            <Gram className={classes.gram} />
           </Col>
         </Row>
       </Container>
