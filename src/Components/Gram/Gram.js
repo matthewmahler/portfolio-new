@@ -17,7 +17,7 @@ class Gram extends Component {
       <Carousel showThumbs={false}>
         {paths.map((img, i) => {
           return (
-            <div className={classes.photos}>
+            <div className={classes.photos} key={i}>
               <img src={img} alt="" />
             </div>
           );

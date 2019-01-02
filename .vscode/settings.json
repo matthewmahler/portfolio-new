@@ -1,0 +1,7 @@
+{
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/93766098-e9d0-4ddf-a95a-67a26a812547/resourceGroups/appsvc_rg_linux_centralus/providers/Microsoft.Web/sites/portfolio-new",
+  "appService.deploySubpath": ""
+}
