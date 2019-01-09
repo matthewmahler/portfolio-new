@@ -35,3 +35,27 @@
   font-size: 18px;
   color: #000000;
 }
+
+.mongo {
+  color: #589636;
+  font-weight: 700;
+}
+
+.express {
+  font-weight: 700;
+}
+
+.react {
+  color: #00d8ff;
+  font-weight: 700;
+}
+
+.node {
+  color: #215732;
+  font-weight: 700;
+}
+
+.graph {
+  color: #6e5494;
+  font-weight: 700;
+}
