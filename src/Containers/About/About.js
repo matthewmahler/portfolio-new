@@ -18,8 +18,8 @@ class About extends Component {
               playing in multiple bands to being an all around concert addict
               and everything in between. Ultimately, this led me to Ramapo
               College of New Jersey where I graduated in 2015 with a B.A. in
-              Music Production and Audio Engineering. after a few years of
-              freelancing around New Jersey it was time for a change.
+              Music Production and Audio Engineering. After a few years of
+              freelancing around New Jersey it was time for a new challenge.
             </p>
             <p className={classes.about}>
               Realizing my passion for web development, I pivoted career paths,
@@ -33,7 +33,7 @@ class About extends Component {
               <span className={classes.node}> Node</span>, and
               <span className={classes.graph}> GraphQL</span>) but when I’m not
               working on websites and web apps, you can usually find me in the
-              pit screaming every word of my favorite songs.
+              pit singing along to every word of my favorite songs.
             </p>
           </Col>
           <Col

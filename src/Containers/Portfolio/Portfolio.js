@@ -6,7 +6,7 @@ import data from "../../Components/PortfolioData/PortfolioData";
 class Portfolio extends Component {
   state = {
     selected: 0,
-    projects: data
+    projects: data.projects
   };
 
   selectProject = key => {
@@ -22,7 +22,12 @@ class Portfolio extends Component {
           <Col md={{ size: 12 }}>
             <h1 className={classes.header}>Projects</h1>
           </Col>
-          <Col sm="12" md={{ size: 5, offset: 1 }} className="py-2">
+
+          <Col
+            sm="12"
+            md={{ size: 5, offset: 1 }}
+            className={`${classes.leftSection} "py-2"`}
+          >
             {this.state.projects.map((project, i) => {
               return (
                 <Card
@@ -44,14 +49,21 @@ class Portfolio extends Component {
               );
             })}
           </Col>
+
           <Col
             sm="12"
             md={{ size: 5 }}
             className={`${classes.rightSection} "py-2"`}
           >
-            <h2 className={classes.projectTitle}>
-              {this.state.projects[this.state.selected].title}
-            </h2>
+            <a
+              className={classes.link}
+              href={this.state.projects[this.state.selected].link}
+              target="_"
+            >
+              <h2 className={classes.projectTitle}>
+                {this.state.projects[this.state.selected].title}
+              </h2>
+            </a>
             <h3 className={classes.projectSubtitle}>
               {this.state.projects[this.state.selected].subTitle}
             </h3>

@@ -15,7 +15,7 @@
   margin-bottom: 0;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 4rem;
   color: #202020;
 }
 
@@ -31,7 +31,7 @@
 
 .navLink {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
   color: #202020;
   top: 50%;
 }

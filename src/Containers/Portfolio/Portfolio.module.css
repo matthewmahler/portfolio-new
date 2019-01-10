@@ -2,8 +2,8 @@
   padding-bottom: 40px;
   z-index: -1;
   box-sizing: border-box;
-  -webkit-box-shadow: inset 0 0 60px 30px #154A6D;
-  box-shadow: inset 0 0 60px 30px #154A6D;
+  -webkit-box-shadow: inset 0 0 60px 30px #154a6d;
+  box-shadow: inset 0 0 60px 30px #154a6d;
   min-height: 85vh;
 }
 
@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  font-size: 48px;
+  font-size: 4rem;
   text-align: center;
   color: #202020;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -27,7 +27,8 @@
 }
 
 .tile:hover {
-  box-shadow: 4px 8px 8px #39B1FF, 4px 8px 8px #154A6D, 4px 8px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 8px 8px #39b1ff, 4px 8px 8px #154a6d,
+    4px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 .card {
@@ -36,6 +37,7 @@
   width: 45%;
   box-sizing: border-box;
   display: inline-block;
+  color: #f7f7f7
 }
 
 .cardTitle {
@@ -44,8 +46,9 @@
   font-style: normal;
   font-weight: bold;
   line-height: normal;
-  font-size: 14px;
+  font-size: 1.5rem;
   color: #202020;
+  background-color: #f7f7f7;
 }
 
 .projectTitle {
@@ -53,38 +56,53 @@
   font-weight: 900;
   line-height: normal;
   padding-top: 10px;
-  font-size: 36px;
+  font-size: 3.5rem;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.projectTitle:hover {
+  color: #39b1ff;
+}
+
+.link:hover {
+  text-decoration: none;
 }
 
 .projectSubtitle {
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  font-size: 18px;
+  font-size: 2rem;
   text-align: center;
-  color: #39B1FF;
+  color: #39b1ff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .highlight {
-  box-shadow: 4px 8px 8px #39B1FF, 4px 8px 8px #154A6D, 4px 8px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 8px 8px #39b1ff, 4px 8px 8px #154a6d,
+    4px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 .rightSection {
   margin-bottom: 15px;
   background: #202020;
-  border: 10px solid #39B1FF;
-  box-sizing: border-box
+  border: 10px solid #39b1ff;
+  box-sizing: border-box;
+}
+
+.leftSection {
+  margin-bottom: 15px;
+  background: #f7f7f7;
+  box-sizing: border-box;
 }
 
 .techListTitle {
   font-style: normal;
   line-height: normal;
-  font-size: 18px;
-  color: #39B1FF;
+  font-size: 2rem;
+  color: #39b1ff;
   font-weight: 700;
   list-style: none;
 }
@@ -99,8 +117,8 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  font-size: 16px;
-  color: #F7F7F7;
+  font-size: 1.5rem;
+  color: #f7f7f7;
 }
 
 .description {
@@ -108,6 +126,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  font-size: 12px;
-  color: #F7F7F7;
+  font-size: 1.2rem;
+  color: #f7f7f7;
 }
