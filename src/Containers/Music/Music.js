@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import classes from "./Music.module.css";
-import { Container, Row, Col } from "reactstrap";
 import YouTube from "react-youtube";
 
 class Music extends Component {
@@ -12,9 +11,9 @@ class Music extends Component {
       }
     };
     return (
-      <Container fluid={true} className={classes.musicContainer}>
-        <Row>
-          <Col sm="12" md={{ size: 5, offset: 1 }}>
+      <div>
+        <div>
+          <div>
             <h4 className={classes.header}>What I'm Listening To</h4>
             <iframe
               title="Addicted"
@@ -25,17 +24,17 @@ class Music extends Component {
               allowtransparency="true"
               allow="encrypted-media"
             />
-          </Col>
-          <Col sm="12" md={{ size: 5 }}>
+          </div>
+          <div>
             <h4 className={classes.header}>My Music</h4>
             <YouTube
               videoId="AkNrcnvUmL8"
               opts={opts}
               onReady={this._onReady}
             />
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     );
   }
 }

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Row, Col } from "reactstrap";
 import classes from "./Icons.module.css";
 class Icons extends Component {
   render() {
@@ -37,27 +36,20 @@ class Icons extends Component {
     ];
 
     return (
-      <Row>
+      <div>
         {iconData.map((icon, i) => {
           return (
-            <Col
-              sm="2"
-              md={{ size: 2, offset: icon.offset }}
-              className={classes.icons}
-              key={i}
+            <a
+              href={icon.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={classes[icon.name]}
             >
-              <a
-                href={icon.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes[icon.name]}
-              >
-                <i className={icon.classes} aria-hidden="true" />
-              </a>
-            </Col>
+              <i className={icon.classes} aria-hidden="true" />
+            </a>
           );
         })}
-      </Row>
+      </div>
     );
   }
 }

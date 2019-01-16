@@ -4,23 +4,36 @@
   border-bottom: 5px solid #154a6d;
   margin: 0;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+}
+
+.logoFull {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+.logoImage {
+  padding: 2rem;
+  width: 50px;
+  background: transparent;
 }
 
 .fullName {
-  margin-left: 30px;
-  font-weight: 900;
-  margin-bottom: 0;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 4rem;
+  font-weight: 800;
+
+  font-size: 3rem;
   color: #202020;
+
 }
 
-.accents {
-  color: #39b1ff;
+.names {
+  display: block;
+  padding-left: 1rem;
+
 }
 
 .navFull {

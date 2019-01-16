@@ -1,56 +1,48 @@
 import React, { Component } from "react";
 import classes from "./Navbar.module.css";
-import { Container, Row, Col, Nav, NavItem, NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
+const path = require("../../assets/LogoMakr_7NNF2w.png");
 
 class Navbar extends Component {
   render() {
-    let leftBrace = "{ ";
-    let rightBrace = " }";
     return (
-      <Container fluid={true} className={classes.navContainer}>
-        <Row>
-          <Col sm="12" md={{ size: 6 }} className="py-3">
-            <NavLink tag={Link} to="/">
-              <h1 className={classes.fullName}>
-                Matthew <span className={classes.accents}>{leftBrace}</span>
-                James
-                <span className={classes.accents}>{rightBrace} </span>
-                Mahler
-              </h1>
-            </NavLink>
-          </Col>
-          <Col sm="12" md={{ size: 6 }} className="py-3">
-            <Nav className={classes.navFull}>
-              <NavItem>
-                <NavLink tag={Link} to="/About" className={classes.navLink}>
-                  About
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} to="/Portfolio" className={classes.navLink}>
-                  Portfolio
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} to="/Contact" className={classes.navLink}>
-                  Contact
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} to="/Resume" className={classes.navLink}>
-                  Resume
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink tag={Link} to="/Music" className={classes.navLink}>
-                  Music
-                </NavLink>
-              </NavItem>
-            </Nav>
-          </Col>
-        </Row>
-      </Container>
+      <div className={classes.navContainer}>
+        <Link tag={Link} to="/" className={classes.logoFull}>
+          <img src={path} className={classes.logoImage} alt="logo" />
+          <h1 className={classes.fullName}>
+            <span className={classes.names}>Matt</span>{" "}
+            <span className={classes.names}>Mahler</span>
+          </h1>
+        </Link>
+
+        <div className={classes.navFull}>
+          <span>
+            <Link tag={Link} to="/About" className={classes.navLink}>
+              About
+            </Link>
+          </span>
+          <span>
+            <Link tag={Link} to="/Portfolio" className={classes.navLink}>
+              Portfolio
+            </Link>
+          </span>
+          <span>
+            <Link tag={Link} to="/Contact" className={classes.navLink}>
+              Contact
+            </Link>
+          </span>
+          <span>
+            <Link tag={Link} to="/Resume" className={classes.navLink}>
+              Resume
+            </Link>
+          </span>
+          <span>
+            <Link tag={Link} to="/Music" className={classes.navLink}>
+              Music
+            </Link>
+          </span>
+        </div>
+      </div>
     );
   }
 }

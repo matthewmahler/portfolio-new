@@ -1,18 +1,13 @@
 import React, { Component } from "react";
 import classes from "./About.module.css";
-import { Container, Row, Col } from "reactstrap";
 import Gram from "../../Components/Gram/Gram";
 
 class About extends Component {
   render() {
     return (
-      <Container fluid={true} className={classes.aboutSection}>
-        <Row>
-          <Col
-            sm="12"
-            md={{ size: 5, offset: 1 }}
-            className={classes.mainSection}
-          >
+      <div className={classes.aboutSection}>
+        <div>
+          <div className={classes.mainSection}>
             <p className={classes.about}>
               For the last 15 years I've eaten, slept and breathed music, from
               playing in multiple bands to being an all around concert addict
@@ -35,16 +30,12 @@ class About extends Component {
               working on websites and web apps, you can usually find me in the
               pit singing along to every word of my favorite songs.
             </p>
-          </Col>
-          <Col
-            sm="12"
-            md={{ size: 4, offset: 1 }}
-            className={classes.photoSection}
-          >
+          </div>
+          <div className={classes.photoSection}>
             <Gram className={classes.gram} />
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     );
   }
 }

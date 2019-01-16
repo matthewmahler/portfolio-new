@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import classes from "./Portfolio.module.css";
-import { Container, Row, Col, Card } from "reactstrap";
 import data from "../../Components/PortfolioData/PortfolioData";
 
 class Portfolio extends Component {
@@ -17,20 +16,16 @@ class Portfolio extends Component {
 
   render() {
     return (
-      <Container fluid={true} className={classes.portfolioContainer}>
-        <Row>
-          <Col md={{ size: 12 }}>
+      <div className={classes.portfolioContainer}>
+        <div>
+          <div>
             <h1 className={classes.header}>Projects</h1>
-          </Col>
+          </div>
 
-          <Col
-            sm="12"
-            md={{ size: 5, offset: 1 }}
-            className={`${classes.leftSection} "py-2"`}
-          >
+          <div>
             {this.state.projects.map((project, i) => {
               return (
-                <Card
+                <div
                   className={classes.card}
                   key={i}
                   onClick={() => this.selectProject(i)}
@@ -45,16 +40,12 @@ class Portfolio extends Component {
                     alt=""
                   />
                   <h4 className={classes.cardTitle}>{project.title}</h4>
-                </Card>
+                </div>
               );
             })}
-          </Col>
+          </div>
 
-          <Col
-            sm="12"
-            md={{ size: 5 }}
-            className={`${classes.rightSection} "py-2"`}
-          >
+          <div>
             <a
               className={classes.link}
               href={this.state.projects[this.state.selected].link}
@@ -67,8 +58,8 @@ class Portfolio extends Component {
             <h3 className={classes.projectSubtitle}>
               {this.state.projects[this.state.selected].subTitle}
             </h3>
-            <Row>
-              <Col sm="12" md={{ size: 6 }}>
+            <div>
+              <div>
                 <ul className={classes.techList}>
                   <li className={classes.techListTitle}>Technologies Used:</li>
                   {this.state.projects[this.state.selected].techList.map(
@@ -81,16 +72,16 @@ class Portfolio extends Component {
                     }
                   )}
                 </ul>
-              </Col>
-              <Col sm="12" md={{ size: 6 }}>
+              </div>
+              <div>
                 <p className={classes.description}>
                   {this.state.projects[this.state.selected].description}
                 </p>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     );
   }
 }
